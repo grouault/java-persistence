@@ -1,5 +1,4 @@
 # ignorer les fichiers suivants
-lib/
 personnes-entites/bin/*
 
 #Compiled class file
