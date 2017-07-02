@@ -1,0 +1,8 @@
+# Install
+##
+https://www.mkyong.com/hibernate/how-to-install-hibernate-tools-in-eclipse-ide/
+
+# Création et Configuration. Projet JPA
+##
+- Select Type ==> JPA
+- Selectionner l'unité de pesrsitence
