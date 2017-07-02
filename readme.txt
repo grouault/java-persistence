@@ -1,1 +1,3 @@
-http://tahe.developpez.com/tutoriels-cours/jpa/
+
+## Projet Personne-entite.
+# http://tahe.developpez.com/tutoriels-cours/jpa/

@@ -40,39 +40,39 @@ public class Main {
 		test2();
 
 		// test3
-		log("test3");
+//		log("test3");
 //		test3();
 
 		// test4
-		log("test4");
-//		test4();
+//		log("test4");
+////		test4();
 
 		// test5
-		log("test5");
-//		test5();
+//		log("test5");
+////		test5();
 
 		// test6
-		log("test6");
+//		log("test6");
 //		test6();
 
 		// test7
-		log("test7");
+//		log("test7");
 //		test7();
 
 		// test8
-		log("test8");
+//		log("test8");
 //		test8();
 
 		// test9
-		log("test9");
+//		log("test9");
 //		test9();
 
 		// test10
-		log("test10");
+//		log("test10");
 //		test10();
 
 		// test11
-		log("test11");
+//		log("test11");
 //		test11();
 
 //		// test12
