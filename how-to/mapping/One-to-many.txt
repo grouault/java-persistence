@@ -1,0 +1,12 @@
+# https://en.wikibooks.org/wiki/Java_Persistence/OneToMany   
+   
+@OneToMany(mappedBy = "ressource", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+@OnDelete(action = OnDeleteAction.CASCADE)
+@Cascade(org.hibernate.annotations.CascadeType.DELETE_ORPHAN) 
+
+
+
+@OneToMany(mappedBy = "ressource", cascade = CascadeType.ALL, fetch = FetchType.LAZY, orphanRemoval=true)
+public Set<LienRessourceCi> getLiensRessourceCi() {
+    return liensRessourceCi;
+}	
