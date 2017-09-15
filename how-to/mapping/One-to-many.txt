@@ -1,4 +1,6 @@
 # https://en.wikibooks.org/wiki/Java_Persistence/OneToMany   
+# http://www.codejava.net/frameworks/hibernate/hibernate-one-to-many-association-on-join-table-annotations-example
+https://stackoverflow.com/questions/1299455/hibernate-manytomany-delete-relation
    
 # JoinTable   
 # Supprimer les éléments liés par une table de liaison   
