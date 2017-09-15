@@ -3,7 +3,7 @@
 # JoinTable   
 # Supprimer les éléments liés par une table de liaison   
 - consiste à supprimer les éléments de la liste (SET)
-- mettre l'annotation DELETE_ORPHAN
+- mettre l'annotation DELETE_ORPHAN : objet orphelin détaché car retirer de la liste ???
    
 @OneToMany(mappedBy = "ressource", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
 @OnDelete(action = OnDeleteAction.CASCADE)
