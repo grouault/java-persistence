@@ -1,0 +1,3 @@
+# http://tahe.developpez.com/java/jpa/?page=page_3#LIII-A-13-b
+
+# Base mysql
