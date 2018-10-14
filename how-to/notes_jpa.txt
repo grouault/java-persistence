@@ -1,0 +1,41 @@
+# workspace
+D:\devs\projets\java\java-jpa\workspace\J2seJPA
+
+# Pont-relationnel/objet
+- @Entity : objet
+- Base de données (relationnel)
+- couche JPA : EntityManager ==> crée un pont objet/relationnel
+
+# Couche JPA
+La couche JPA présente au client une interface appelée [EntityManager] qui, 
+comme son nom l'indique permet de gérer les objets @Entity du contexte de persistance
+Un entityManager est associé à un contexte de persistance.
+
+# Contexte de persistance d'une application / couche JPA / Client JPA
+- Ensemble des objets gérés par la couche JPA dans le cadre du pont objet/relationnel.
+
+# Client JPA
+Pour accéder aux données du contexte de persistance, un client JPA doit passer par la couche JPA.
+- il peut créer un objet et demander à la couche JPA de le rendre persistant. L'objet fait alors partie du contexte de persistance.
+- il peut demander à la couche [JPA] une référence d'un objet persistant existant.
+- il peut modifier un objet persistant obtenu de la couche JPA.
+- il peut demander à la couche JPA de supprimer un objet du contexte de persistance.
+
+# EntityManager
+Un objet EntityManager a un cycle de vie qui n'est pas forcément celui de l'application. 
+Il a un début et une fin. Ainsi un client JPA peut travailler successivement avec différents objets EntityManager. 
+Le contexte de persistance associé à un EntityManager a le même cycle de vie que lui. 
+Ils sont indissociables l'un de l'autre. Lorsque un objet EntityManager est fermé, 
+son contexte de persistance est si nécessaire synchronisé avec la base de données puis il n'existe plus. 
+Il faut créer un nouvel EntityManager pour avoir de nouveau un contexte de persistance.
+
+# Définiton
+Object transient / persistant
+objets sont dans un état passager (transient) pour les opposer aux objets persistants (persistent) qui sont gérés par le contexte de persistance.
+Nous parlerons plutôt d'objets non persistants (expression non française) pour indiquer qu'ils ne sont pas encore gérés par le contexte de persistance 
+et d'objets persistants pour ceux qui sont gérés par celui-ci.
+Objet détaché :
+Nous trouverons une troisième catégorie d'objets, des objets détachés (detached) qui sont des objets précédemment persistants 
+mais dont le contexte de persistance a été fermé. 
+Le client peut détenir des références sur de tels objets, ce qui explique qu'ils ne sont pas nécessairement détruits à la fermeture du contexte de persistance. 
+On dit alors qu'ils sont dans état détaché. L'opération [EntityManager].merge permet de les réattacher à un contexte de persistance nouvellement créé.
