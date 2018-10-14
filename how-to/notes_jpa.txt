@@ -29,7 +29,7 @@ Ils sont indissociables l'un de l'autre. Lorsque un objet EntityManager est ferm
 son contexte de persistance est si nécessaire synchronisé avec la base de données puis il n'existe plus. 
 Il faut créer un nouvel EntityManager pour avoir de nouveau un contexte de persistance.
 
-# Définiton
+# Définition
 Object transient / persistant
 objets sont dans un état passager (transient) pour les opposer aux objets persistants (persistent) qui sont gérés par le contexte de persistance.
 Nous parlerons plutôt d'objets non persistants (expression non française) pour indiquer qu'ils ne sont pas encore gérés par le contexte de persistance 
@@ -39,3 +39,5 @@ Nous trouverons une troisième catégorie d'objets, des objets détachés (detached)
 mais dont le contexte de persistance a été fermé. 
 Le client peut détenir des références sur de tels objets, ce qui explique qu'ils ne sont pas nécessairement détruits à la fermeture du contexte de persistance. 
 On dit alors qu'ils sont dans état détaché. L'opération [EntityManager].merge permet de les réattacher à un contexte de persistance nouvellement créé.
+
+# Test Test2
