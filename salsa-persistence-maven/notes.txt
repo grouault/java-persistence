@@ -12,3 +12,5 @@ Projet maven permettant de tester les stubs Salsa-core.
 Attention,l'ensemble des dépendances maven doivent être mises dans le pom.xml
 - version du salsa-core
 - com.google.guava
+
+# Test
