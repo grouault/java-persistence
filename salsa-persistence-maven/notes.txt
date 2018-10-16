@@ -1,3 +1,7 @@
+# Principe
+Ce projet a pour but de faire des requêtes avec hql et tester les requêtes hibernate.
+Le fichier 'persistence.xml' est configuré pour faire la configuration avec le plugin HibernateTools.
+
 # Projet maven
 Construit à partir du lien suivant:
 https://www.javahelps.com/2015/08/jpa-hello-world-using-hibernate.html
