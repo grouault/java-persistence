@@ -1,0 +1,10 @@
+# Projet maven
+Construit à partir du lien suivant:
+https://www.javahelps.com/2015/08/jpa-hello-world-using-hibernate.html
+==> construit un projet java que l'on convertit en projet maven
+
+# Dépendances 
+Projet maven permettant de tester les stubs Salsa-core.
+Attention,l'ensemble des dépendances maven doivent être mises dans le pom.xml
+- version du salsa-core
+- com.google.guava
