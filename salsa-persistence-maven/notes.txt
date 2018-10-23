@@ -13,4 +13,15 @@ Attention,l'ensemble des dépendances maven doivent être mises dans le pom.xml
 - version du salsa-core
 - com.google.guava
 
-# Test
+# Comment Tester.
+1- A utiliser avec la vue Hibernate
+2- Configurer une unité de persistence de type jpa
+3- sélectionner le projet salsa-persistence 
+4- Créer une connexion sur la base :
+database: salsa
+jdbc:mysql://localhost:3306/salsa
+salsa/salsa
+
+==> Tester avec la requête : 
+select u.identifiant, u.actif
+from Utilisateur u
